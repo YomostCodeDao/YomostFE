@@ -3,6 +3,7 @@ header{
     justify-content: space-between;     
     display: flex;    
     padding: 70px 0px;
+    max-width: 1320px;
 }
 body{
     padding: 0px 300px;
@@ -12,6 +13,14 @@ body{
 
 }
 
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1320px;
+}
 /* ================================================= */
 /* Heading */
 /* ================================================= */
