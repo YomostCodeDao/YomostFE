@@ -62,7 +62,7 @@ h3{
 }
 
 .social-link-header{
-    /* background-color: black; */
+    display: inline-block;
 }
 .social-link-header:hover{
     color: orange;
