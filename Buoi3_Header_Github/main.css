@@ -1,0 +1,103 @@
+/* _________________________________________________ */
+/* GENERAL */
+/* _________________________________________________ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+}
+
+body{
+    height: 400vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15px;
+    padding: 20px;
+}
+
+
+/* _________________________________________________ */
+/* CONTAINER PART 1*/
+/* _________________________________________________ */
+.container-part-one ul{    
+    display: flex;
+    gap: 15px;
+}
+
+.container-part-one li{
+    display: flex;
+    list-style: none;
+    gap: 20px;    
+}
+
+.container-part-one{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-part-one li:hover{
+    color: rgb(169, 169, 169);
+}
+/* _________________________________________________ */
+/* CONTAINER PART 2*/
+/* _________________________________________________ */
+
+.container-part-two{
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+
+}
+
+.sign-part span{
+    padding: 10px;
+
+}
+
+.container-button{
+    border: 1px solid whitesmoke;
+    padding: 10px 5px;
+    border-radius: 4px;
+}
+
+.sign{
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+}
+
+.sign-part span:hover{
+    color: rgb(169, 169, 169);
+}
+
+.sticky{
+    position: sticky;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    top: 750px;
+    float: right;
+    right: 10px;
+    background-color: rgb(158, 158, 158);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+
