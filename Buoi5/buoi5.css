@@ -1,0 +1,237 @@
+/* ========================== */
+/* GENERAL */
+/* ========================== */
+* {
+    font-family: "Lato", serif;
+}
+
+body {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1300px;
+}
+
+h2 {
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: inline;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+.heading {
+    font-size: 28px;
+    color: rgb(80, 80, 80);
+}
+
+
+
+/* ========================== */
+/* LILY */
+/* ========================== */
+
+img {
+    position: relative;
+    opacity: 0.7;
+    transition: left 0.25s ease-in;
+    overflow: hidden;
+    left: -25px;
+}
+
+.effect-lily {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 400px;
+    margin: 15px;
+}
+
+.effect-lily:hover img {
+    opacity: 1;
+    left: 0;
+}
+
+.img-text-one {
+    position: absolute;
+    left: 40px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    transition: bottom 0.25s ease-in;
+    bottom: 20px;
+}
+
+.effect-lily:hover .img-text-one {
+    bottom: 70px;
+}
+
+.effect-lily:hover p {
+    visibility: visible;
+}
+
+.img-text-one p {
+    margin: 0 0;
+    font-size: 13px;
+    font-weight: 350;
+    visibility: hidden;
+    letter-spacing: 2px;
+}
+
+/* ========================== */
+/* Sadie */
+/* ========================== */
+.effect-sadie {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 400px;
+    margin: 15px;
+}
+
+.effect-sadie:hover img {
+    opacity: 1;
+}
+
+.img-text-two {
+    text-transform: uppercase;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    bottom: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-text-two .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+}
+
+.img-text-two h2 {
+    position: absolute;
+    color: rgb(25, 29, 48);
+    font-weight: 350;
+    bottom: 150px;
+    transition: all 0.25s ease-in;
+}
+
+.effect-sadie:hover .img-text-two h2 {
+    bottom: 170px;
+    color: rgb(255, 255, 255);
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    transition: bottom 1s linear;
+}
+
+.text p {
+    margin: 0 0;
+    font-weight: 300;
+    bottom: 5px;
+    visibility: hidden;
+    transition: bottom 0.25s ease-in-out;
+}
+
+
+.effect-sadie:hover .text p {
+
+    visibility: visible;
+    bottom: 50px;
+}
+
+/* Chỉnh lại CSS thứ 2 cho đẹp hơn */
+/* ========================== */
+/* Loading */
+/* ========================== */
+
+.loading-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.loading-button p {
+    top: 95px;
+    position: absolute;
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    border: 15px solid aqua;
+    border-radius: 100px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    animation: loading 1s infinite linear;
+    position: absolute;
+    top: 50px;
+
+
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================== */
+/* BORDER PAGE*/
+/* ========================== */
+
+
+.border-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 100px;
+    animation: quay 5s infinite linear;
+}
+
+@keyframes quay {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 97.5vw;
+        top: 0px;
+    }
+
+    50% {
+        left: 97.5vw;
+        top: 95vh;
+    }
+
+    75% {
+        left: 0;
+        top: 95vh;
+    } 
+
+    100% {
+        left: 0px;
+        top: 0px; 
+    } 
+}
+
+
