@@ -1,0 +1,13 @@
+body {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+}
+
+.container{
+    font-weight: 300;
+    line-height: 30px;
+}
