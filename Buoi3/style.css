@@ -208,6 +208,7 @@ h3 {
 .hero-skill {
     display: grid;
     grid-template-columns: auto auto;
+    padding-left: 20px;
     margin-bottom: 100px;
 }
 
