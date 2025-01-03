@@ -19,7 +19,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    /* z-index: 5;  */
+    z-index: 5;
     background-color: #ffffff;
 }
 
@@ -72,6 +72,7 @@ h3 {
     padding: 17px 30px;
     border: 2px solid #F26464;
     border-radius: 40px;
+    transition: all 0.2s ease-in;
 }
 
 .button:hover {
@@ -143,6 +144,10 @@ h3 {
 
 }
 
+.banner-header div h1 {
+    font-size: 48px;
+}
+
 .exp-list {
     list-style: none;
     display: grid;
@@ -208,7 +213,7 @@ h3 {
 .hero-skill {
     display: grid;
     grid-template-columns: auto auto;
-    padding-left: 20px;
+    padding: 0 12px 0 0;
     margin-bottom: 100px;
 }
 
@@ -235,10 +240,6 @@ h3 {
     color: #373737;
 }
 
-.skill-list li:hover {
-    background-color: #c7c3c3;
-}
-
 /* _________________________________________________ */
 /* WORK EXPERIENCES */
 /* _________________________________________________ */
@@ -257,6 +258,7 @@ h3 {
     font-size: 14px;
     padding: 0px 0px 10px;
     font-family: 'Inter', sans-serif;
+    line-height: 21px;
     font-weight: 600;
 }
 
@@ -292,7 +294,7 @@ h3 {
 .infor-exp ul li {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 500;
     padding-left: 28px;
     position: relative;
     margin-bottom: 20px;
