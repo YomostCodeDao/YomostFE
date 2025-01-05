@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'FCB Bold';
+    src:
+        url('./font/FCBARCELONA-Extrabold.woff2') format('woff2'),
+        url('./font/FCBARCELONA-Extrabold.woff') format('woff'),
+        url('./font/FCBARCELONA-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FCB Thin';
+    src: local('FC Barcelona CONDENSED'), local('FC-Barcelona-CONDENSED'),
+        url('./font/FCBARCELONACONDENSED.woff2') format('woff2'),
+        url('./font/FCBARCELONACONDENSED.woff') format('woff'),
+        url('./font/FCBARCELONACONDENSED.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 200vh;
+    background-color: #3b3a65;
+}
+
+
+/* ============== */
+/* HEADER */
+/* ============== */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.img-logo{
+    position: fixed;
+    transform: translate(25px,15px);
+    z-index: 999;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ===================== */
+/* HEADER PART 1 */
+/* ===================== */
+
+/* Top message */
+.header-part-1 {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    background-color: rgb(10, 9, 39);
+    font-family: 'FCB Bold';
+}
+
+.top-mes {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    border-radius: 16px;
+    background-image: linear-gradient(90deg, rgb(21, 66, 132), rgb(39, 37, 69));
+    padding: 7px 16px;
+    font-size: 16px;
+    scale: 0.9;
+    transform: translateX(150px);
+}
+
+.top-mes span {
+    color: #fdc529;
+}
+
+/* Top nav right hand */
+.top-nav-right {
+    display: grid;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* Area User Login */
+.user-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'FCB Bold';
+}
+
+.user-button i {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    border-radius: 50px;
+    background-color: rgb(21, 66, 132);
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* Area User Plan Option */
+.user-option {
+    display: flex;
+    background-image: linear-gradient(90deg, rgb(140, 26, 23), rgb(205, 18, 45));
+    border-radius: 3px;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    line-height: 14px;
+    margin: 0 8px 0 0;
+    height: 42px;
+    font-weight: 400;
+}
+
+/* Choose Languge */
+.language-option {
+    display: flex;
+    background-color: #3b3a65;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.25s ease-in;
+    margin: 0 5px;
+}
+
+.language-option:hover {
+    background-color: rgb(204, 18, 46);
+}
+
+/* FC Barcelona Site */
+.fcb-site {
+    display: flex;
+    background-color: #3b3a65;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.25s ease-in;
+    font-size: 7px;
+    line-height: 7px;
+    margin: 0 15px 0 5px;
+    font-family: 'FCB Bold';
+}
+
+.fcb-site:hover {
+    background-color: rgb(204, 18, 46);
+}
+
+/* ===================== */
+/* HEADER PART 2 */
+/* ===================== */
+.header-part-2 {
+    width: 100%;
+    position: relative;
+    background-color: #181733;
+    font-family: 'FCB Bold';
+}
+.nav-middle-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-middle-one  {
+    transform: translateX(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-middle-two{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-middle-two p{
+    color: #fdc529;
+} 
+
+.menu-item {
+    background-color: #181733;
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'FCB Thin';
+}
+
+.menu-item svg{
+    color: #fdc529;
+    display: inline;
+    margin: 0 10px;
+}
+
+/* ===================== */
+/* HEADER PART 3 */
+/* ===================== */
+.header-part-3{
+    width: 100%;
+    position: absolute;
+    top: 96px;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, rgb(0,24,180),rgb(155,0,65));  
+    font-family: 'FCB Bold';
+}
+
+.list-item{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transform: translateX(150px);
+}
+.list-item li{
+    font-family: 'FCB Thin';
+    color: #ffffff;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;    
+    padding: 10px 17px;
+}
+
+/* ===================== */
+/* VIEWPOINT */
+/* ===================== */
+@media only screen and (max-width: 839px){
+    .top-nav-right, .nav-middle-menu{
+        display: none;
+    }
+    .top-mes{
+        transform: translateX(10px);
+    }
+    .img-logo{
+        scale: 0.7;
+        transform: translate(5px, 40px);
+    }
+    .header-part-3{
+        background-color: #fff;
+    }
+    
+
+}
