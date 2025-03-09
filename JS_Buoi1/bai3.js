@@ -16,4 +16,8 @@ tangDan(chuoi)
 tangDan('135798642')
 tangDan('24563')
 
-//Done
+//Bài 4: Thay thế mọi ký tự trong một chuỗi đã cho vói ký tự theo sau nó trong bảng chữ cái
+function cau4(string) {
+    let allChar = string.split("");
+
+}
